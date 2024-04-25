@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>temperature-conversion</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card col-lg-12">
+                <div class="card-header">
+                    <h1 class="text-center"> Temperature Conversion </h1>
+                </div>
+                <div class="card-body">
+                    
+                    <div class="row" id="c-to-f">
+                        <p>Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol convert untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+                        <div class="col-md">
+                            <label class="text"><strong>Celsius (°C)</strong></label>
+                            <input type="number" class="form-control" id="celsius-to-f-input">
+                        </div>
+                        <div class="button-group buttonlist" id="tempbutton">
+                            <button type="button" class="btn btn-light btn-block btn-sm" onclick="resultcTof()">Convert</button>
+                            <button type="button" class="btn btn-light btn-block btn-sm" onclick="reset()">Reset</button>
+                            <button type="button" class="btn btn-light btn-block btn-sm" onclick="reverse()">Reverse</button>
+                        </div>
+                        <div class="col-md">
+                            <label class="text"><strong>Fahrenheit (°F)</strong></label>
+                            <input type="number" class="form-control container-fluid" id="celsius-to-f-result"  readonly>
+                        </div>
+                        <div>
+                            <h4 class="calculatetext">Cara Kalkulasi</h4>
+                            <input type="text" class="form-text container-fluid" id="how-c-to-f" onclick="resulthow" readonly>
+                        </div>
+                        <div>
+                            <h4 class="howcalculate">Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h4>
+                            <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+                            <p class="formula">S(°F) = (S(°C) × 9/5) + 32</p>
+                            <p>atau</p>
+                            <p class="formula">S(°F) = (S(°C) × 1.8) + 32</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row" id="f-to-c">
+                        <p>Masukkan suhu derajat Fahrenheit (°F) ke kotak dibawah, lalu klik tombol convert untuk mendapatkan hasil konversi dalam bentuk Celsius (°C).</p>
+                        <div class="col-md">
+                            <label class="text"><strong>Fahrenheit (°F)</strong></label>
+                            <input type="number" class="form-control container-fluid" id="fahrenheit-to-c-input">
+                        </div>
+                        <div class="button-group buttonlist" id="tempbutton">
+                            <button type="button" class="btn btn-light btn-block btn-sm" onclick="resultfToc()">Convert</button>
+                            <button type="button" class="btn btn-light btn-block btn-sm" onclick="reset()">Reset</button>
+                            <button type="button" class="btn btn-light btn-block btn-sm" onclick="reverse()">Reverse</button>
+                        </div>
+                        <div class="col-md">
+                            <label class="text"><strong>Celsius (°C)</strong></label>
+                            <input type="number" class="form-control container-fluid" id="fahrenheit-to-c-result" readonly>
+                        </div>
+                        <div>
+                            <h4 class="calculatetext">Cara Kalkulasi</h4>
+                            <input type="text" class="form-text container-fluid" id="how-f-to-c" onclick="resulthow" readonly>
+                        </div>
+                        <div>
+                            <h4 class="howcalculate">Cara Konversi Dari Fahrenheit (°F) ke Celsius (°C)</h4>
+                            <p>Suhu S dalam derajat Celsius (°C) sama dengan suhu S dalam derajat Fahrenheit (°F) kurang 32, kali 5/9.</p>
+                            <p class="formula">S(°C) = (S(°F) - 32) × 5/9</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+.container {
+    margin-top: 0.5cm;
+}
+.card-header {
+    background-color: rgb(175, 192, 223);
+    
+}
+.card-body {
+    background-color: rgb(240, 236, 230);
+}
+.text {
+    height: 0.8cm;
+}
+.form-control {
+    border-color: grey;
+    height: 2cm;
+    pointer-events:stroke;
+    font-size: 22px;
+}
+.buttonlist {
+    height: 1.5cm;
+    border-color: black;
+    align-content:center;
+}
+.btn {
+    background-color: rgb(240, 236, 230);
+    border-color: grey;
+    font-size: 18px;
+    margin-right: 0.3cm;
+}
+.form-text {
+    height: 3cm;
+    font-size: 22px;
+    color: black;
+}
+.calculatetext {
+    height: 1.5cm;
+    align-content:end;
+    font-weight: bold;
+}
+.howcalculate {
+    padding-top: 1cm;
+    height: 2cm;
+    font-weight: bold;
+    align-content: center;
+}
+.formula {
+    font-weight:600;
+    font-size: 20px;
+}
+#f-to-c {
+    display: none;
+}
